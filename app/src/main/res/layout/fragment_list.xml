@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="pl.orzechowski.trellomanagmentapp.modules.list.ListViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <pl.orzechowski.trellomanagmentapp.views.NSTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@={viewModel.listName}"
+            android:textColor="@{viewModel.colorRes}"
+            android:textSize="23sp"
+            app:ns_font="@string/font_app_light" />
+
+        <pl.orzechowski.trellomanagmentapp.views.NSTextView
+            android:id="@+id/list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@={viewModel.listName}"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:ns_font="@string/font_app_bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/list_name"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="76dp"
+            android:recyclerView_adapter="@{viewModel.adapter}"
+            android:recyclerView_layoutManager="@{viewModel.lm}"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:is_visible_animated_quick="@{viewModel.addButtonVisibility}"
+            android:onClick="@{() -> viewModel.onAdd()}">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="12dp"
+                    android:background="@color/black" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="12dp"
+                    android:background="@color/black" />
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="2dp"
+                    android:background="@color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="end"
+                    android:background="@color/black" />
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/black" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="12dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/black" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:background="@color/t_gray_warm_50"
+                android:padding="4dp"
+                android:src="@drawable/ic_add" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

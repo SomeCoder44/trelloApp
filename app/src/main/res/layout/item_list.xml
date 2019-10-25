@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="pl.orzechowski.trellomanagmentapp.modules.list.ListItemViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp">
+
+        <pl.orzechowski.trellomanagmentapp.views.NSTextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@color/t_gray_warm_50"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@={viewModel.cardName}"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:ns_font="@string/font_app_bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="12dp"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="1dp">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="2dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/line"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@{viewModel.colorRes}" />
+    </RelativeLayout>
+</layout>

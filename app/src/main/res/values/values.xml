@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="path_prefix" translatable="false">/1/</string>
+    <string name="token" translatable="false">5c68e7a8f3e94c65554c96985ca8250d2c61292956c3508420bc4cc59e5e4504</string>
+    <string name="api_key" translatable="false">374518f51606ef70f29b2d1d09dd32f2</string>
+    <string name="board_id" translatable="false">5db146109ac51e734650fa87</string>
+</resources>

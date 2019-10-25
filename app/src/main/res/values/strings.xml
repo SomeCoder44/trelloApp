@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trello Management App</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="close_app">Do you really want to exit?</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
+</resources>

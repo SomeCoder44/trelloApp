@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_app_regular">TurretRoad-Regular.ttf</string>
+    <string name="font_app_medium">TurretRoad-Medium.ttf</string>
+    <string name="font_app_bold">TurretRoad-Bold.ttf</string>
+    <string name="font_app_light">TurretRoad-Light.ttf</string>
+</resources>

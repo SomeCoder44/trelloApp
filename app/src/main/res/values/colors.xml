@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/t_gray_light</color>
+    <color name="colorPrimaryDark">@color/t_gray_light</color>
+    <color name="colorAccent">@color/t_gray_dark</color>
+
+
+
+
+    <color name="t_gray_light">#C4CACA</color>
+    <color name="t_gray_cold">#9CA4AA</color>
+    <color name="t_gray_warm">#B6B2B3</color>
+    <color name="t_gray_warm_50">#80B6B2B3</color>
+    <color name="t_gray_dark">#E6201F24</color>
+
+    <color name="t_red">#EB424A</color>
+    <color name="t_orange">#E7D33E</color>
+    <color name="t_green">#41E77E</color>
+
+
+    <color name="za_black">#201f24</color>
+    <color name="za_black_transparent">#00201f24</color>
+    <color name="za_black_50">#80201F24</color>
+    <color name="za_black_90">#E6201F24</color>
+    <color name="za_gray">#dfe4e6</color>
+    <color name="za_gray_dark">#4DDFE4E6</color>
+    <color name="za_accent_blue">#247ba0</color>
+
+
+    <color name="za_accent_yellow_light">#E2D240</color>
+    <color name="za_accent_yellow">#8D8325</color>
+    <color name="za_accent_yellow_dark">#5A583E</color>
+
+    <color name="za_accent_red_extra_light">#FF979C</color>
+    <color name="za_accent_red_light">#ff232e</color>
+    <color name="za_accent_red">#AA3138</color>
+    <color name="za_accent_red_dark">#553033</color>
+
+    <color name="azure_blue_light">#2CB0F3</color>
+    <color name="azure_blue">#26617A</color>
+    <color name="azure_blue_dark">#2C4853</color>
+
+    <color name="azure_mint_light">#41E7D5</color>
+    <color name="azure_mint">#2E8072</color>
+    <color name="azure_mint_dark">#344D4A</color>
+
+    <color name="azure_green_light">#41E77E</color>
+    <color name="azure_green">#2E8053</color>
+    <color name="azure_green_dark">#344D41</color>
+
+    <color name="azure_violet_light">#C393F7</color>
+    <color name="azure_violet">#7D5AB8</color>
+    <color name="azure_violet_dark">#413956</color>
+
+    <color name="azure_orange_light">#FDA829</color>
+    <color name="azure_orange">#EF8648</color>
+    <color name="azure_orange_dark">#86614A</color>
+    <color name="azure_orange_opposite">#0257D6</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_dark">#A7A49E</color>
+    <color name="black">#000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_light">#141316</color>
+    <color name="gray">#393632</color>
+    <color name="gray_dark">#393632</color>
+    <color name="shadow">#1f000000</color>
+    <color name="white_50_full">#868686</color>
+    <color name="white_20_full">#dadada</color>
+    <color name="shadow_dark">#ac000000</color>
+    <color name="shadow_za">#F2201F24</color>
+    <color name="shadow_extra_dark">#E6000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!--INCIDENT-->
+    <color name="progress">#696E77</color>
+    <color name="status_reversion">#50828F</color>
+    <color name="status_beginning">#C93E31</color>
+
+    <color name="colorGradientStart">#2CADF3</color>
+    <color name="colorGradientCenter">#6558FF</color>
+    <color name="colorGradientEnd">#41E1E7</color>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+
+    <declare-styleable name="NSTextView">
+        <attr name="ns_font" format="string" />
+    </declare-styleable>
+
+</resources>
